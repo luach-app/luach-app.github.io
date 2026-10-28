@@ -3,43 +3,176 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>luach · לוח</title>
-<meta name="description" content="A household calendar run by a governed agent, for a family to host itself.">
+<title>luach · a family calendar you can talk to</title>
+<meta name="description" content="Say it, and it's on the family calendar. luach is a household calendar run by a careful assistant: nothing changes without a yes, and it runs on your family's own server.">
+<meta property="og:title" content="luach · a family calendar you can talk to">
+<meta property="og:description" content="Say it, and it's on the family calendar. Nothing changes without a yes. Runs on your family's own server.">
+<meta property="og:image" content="https://luach-app.github.io/img/agenda.jpg">
 <link rel="icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <img src="logo.png" alt="">
-    <div><h1>luach · לוח</h1><p>A household calendar you can talk to.</p></div>
-  </header>
 
-  <p>Say “dentist next Tuesday at three”, by typing or with the mic, and luach puts it on the
-  family calendar. Ask “is Saturday free?” and it answers from the calendar. Every change the
-  assistant proposes passes a gate written in code: a guessed time, a likely duplicate or a
-  change to someone else’s event waits for a person to say yes, and every decision is kept on
-  an audit trail.</p>
-
-  <p>luach is free, open-source software that each family runs on its own server. There is no
-  hosted service: the calendar, the conversations and the audit trail stay on a machine the
-  family controls.</p>
-
-  <h2>Get it</h2>
-  <div class="card">
-    <p><strong>The server.</strong> The source code, a quick start and a step-by-step guide to
-    running your own luach are being published on GitHub, very soon, under luach-app.</p>
-    <p><strong>The iPhone app.</strong> Install it and enter your luach’s address on the
-    sign-in screen. It works with any household’s luach.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="logo.png" alt="">luach</a>
+    <nav>
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#features">What it does</a>
+      <a href="#run">Run your own</a>
+      <a href="privacy/">Privacy</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Support</h2>
-  <p>Questions and problems: <a href="https://github.com/luach-app/luach-app.github.io/issues">open an issue</a>.
-  Security reports go privately through
-  <a href="https://github.com/luach-app/luach-app.github.io/security/advisories/new">Report a vulnerability</a>.
-  For help with a particular household’s luach, ask whoever runs it.</p>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">לוח · “board”, like the one on the kitchen wall</span>
+      <h1>A family calendar you can talk to.</h1>
+      <p class="lede">Say “dentist next Tuesday at three” and it’s on everyone’s calendar. Ask “is Saturday free?” and it answers. luach keeps your family’s days in one place, and asks before it changes anything.</p>
+      <ul class="claims">
+        <li><b>Talk, type, or forward an email.</b> Plain words in, the calendar updated.</li>
+        <li><b>Nothing changes without a yes.</b> A guessed time or someone else’s plans wait for a tap.</li>
+        <li><b>Yours, at home.</b> It runs on your family’s own server, with the AI model you choose.</li>
+      </ul>
+      <div class="cta">
+        <a class="btn primary" href="#run">Run your own luach →</a>
+        <a class="btn" href="#app">The iPhone app</a>
+      </div>
+      <p class="trust">Free and open source · English, Español, עברית · No ads, no tracking, no account with us</p>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone a"><img src="img/agenda.jpg" alt=""></div>
+      <div class="phone b"><img src="img/ask.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
 
-  <footer><a href="privacy/">Privacy policy</a> · luach is licensed under the GNU AGPL v3.0 or later.</footer>
-</main>
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">The way families already talk about their week, without opening a calendar app.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Say it</h3><p><span class="say">“Swimming for Lily every Thursday at 5:30.”</span> Type it, hold the mic, or forward the school’s email.</p></div>
+      <div class="step"><div class="n">2</div><h3>luach does the work</h3><p>It works out the day, the person and the time, checks for clashes, and shows you the steps it took.</p></div>
+      <div class="step"><div class="n">3</div><h3>Sure? It’s done. Unsure? It asks.</h3><p>Clear requests go straight on the calendar. A guessed time, a likely duplicate or a change to someone else’s plans waits for a yes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>See it</h2>
+    <p class="sub">A made-up family on the iPhone app: Dana, Sam, Noa and Eli.</p>
+    <div class="gallery">
+      <figure><img src="img/agenda.jpg" alt="The Agenda: today's plans for each person, in their colour"><figcaption>Agenda: the week, in everyone’s colour</figcaption></figure>
+      <figure><img src="img/board.jpg" alt="The Board: each person's day, with events and tasks"><figcaption>Board: each person’s day, chores included</figcaption></figure>
+      <figure><img src="img/ask.jpg" alt="Ask: a question about the week, answered from the calendar"><figcaption>Ask: plain words, real answers</figcaption></figure>
+      <figure><img src="img/month.jpg" alt="The month at a glance"><figcaption>Month: the whole month at a glance</figcaption></figure>
+      <figure><img src="img/approvals.jpg" alt="Approvals: changes waiting for a yes"><figcaption>Approvals: what waits for a yes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p class="sub">One calendar for the whole household, on every screen you have.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🗣️</div><h3>Talk to it</h3><p>Type or speak in English, Spanish or Hebrew. Follow-ups work: “no, Thursday”, “move it to five”.</p></div>
+      <div class="card"><div class="ico">✅</div><h3>Approvals</h3><p>Anything unsure waits as a card with Approve and Deny, for whoever should decide.</p></div>
+      <div class="card"><div class="ico">📧</div><h3>Email in, events out</h3><p>Forward an invitation or a booking, or connect your Gmail, and luach proposes what belongs on the calendar.</p></div>
+      <div class="card"><div class="ico">🖼️</div><h3>The kitchen board</h3><p>A touch screen on the wall with everyone’s day, chores to tick, and tomorrow at a glance.</p></div>
+      <div class="card"><div class="ico">🧹</div><h3>Tasks and chores</h3><p>To-dos and daily chores for each person, ticked off on the board or the phone.</p></div>
+      <div class="card"><div class="ico">🔔</div><h3>Reminders</h3><p>A nudge before each event, tomorrow’s list in the evening, and the week ahead.</p></div>
+      <div class="card"><div class="ico">🔁</div><h3>Repeating plans</h3><p>School, practice, lessons: change one occurrence or all of them.</p></div>
+      <div class="card"><div class="ico">📅</div><h3>Booking links</h3><p>Share a page where others pick a time when the family is free.</p></div>
+      <div class="card"><div class="ico">🔎</div><h3>Answers from the web</h3><p>“When does the pharmacy close on Sunday?” “Will it rain tomorrow?” With the source.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="trust">
+  <div class="wrap split">
+    <div>
+      <h2>Careful by design</h2>
+      <p class="sub">A calendar is a family’s shared memory. luach treats it that way.</p>
+    </div>
+    <ul class="check">
+      <li><b>A gate, written in code.</b><span>Every change the assistant proposes passes rules in the program, not a sentence in a prompt. Inviting anyone outside the family always needs a tap.</span></li>
+      <li><b>Text from outside can’t give orders.</b><span>Emails, web pages and booking notes reach the assistant as data, never as instructions.</span></li>
+      <li><b>An audit trail.</b><span>Every decision is kept on a tamper-evident record. Each member sees their own.</span></li>
+      <li><b>Private by default.</b><span>Each person’s conversations are theirs alone. Your family’s data stays on your server; nothing goes to us.</span></li>
+      <li><b>Your model, your choice.</b><span>Run one at home so nothing leaves the house, or pick a cloud model. The app asks before using one.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="run">
+  <div class="narrow">
+    <h2>Run your own luach</h2>
+    <p class="sub">luach isn’t a service you sign up for. Each family runs its own, on a computer it controls. If you can follow a recipe, you can do this in an afternoon.</p>
+
+    <h3>What you need</h3>
+    <ul class="check">
+      <li><b>A computer that stays on.</b><span>A small home server or mini PC, a NAS that runs Docker, or a small cloud server. 2 GB of memory is plenty.</span></li>
+      <li><b>A web address.</b><span>A domain name for your luach, so phones and browsers can reach it securely over https.</span></li>
+      <li><b>An AI model.</b><span>A cloud API key (a family typically spends a few dollars a month), or a model running at home on a machine with a good GPU.</span></li>
+      <li><b>Optional:</b><span>a Google Calendar to sync with, Gmail import, outgoing email, voice, web search.</span></li>
+    </ul>
+
+    <h3 style="margin-top:36px">The steps</h3>
+    <ol class="run">
+      <li><b>Install Docker</b> on that computer.</li>
+      <li><b>Get luach</b> and copy its settings file:
+        <pre>git clone https://github.com/luach-app/luach.git
+cd luach && cp .env.example .env</pre></li>
+      <li><b>Choose a model.</b> Put its address, key and name in <code>.env</code>: a cloud provider such as OpenRouter, or Ollama on your own machine.</li>
+      <li><b>Start it</b> and read the one-time setup code from its log:
+        <pre>docker compose up -d
+docker compose logs luach | grep -A3 "setup code"</pre></li>
+      <li><b>Give it a web address with https.</b> The guide includes a ready-made setup with Caddy, which gets the certificate for you.</li>
+      <li><b>Create the household.</b> Open your address, enter the setup code, then invite the family by email. Install the iPhone app and type your address.</li>
+    </ol>
+    <p class="note">The full guide walks through every step and every optional extra, with the exact settings, backups, upgrades and troubleshooting. It’s published with the source code on GitHub, under luach-app.</p>
+  </div>
+</section>
+
+<section class="alt" id="app">
+  <div class="wrap split">
+    <div>
+      <h2>The iPhone app</h2>
+      <p class="sub">The whole household in your pocket: Agenda, Board, Approvals and Ask, in English, Spanish and Hebrew.</p>
+      <p>It works with any family’s luach: enter your luach’s address when you sign in. Reminders arrive as notifications, and you can approve what’s waiting with a tap.</p>
+      <p class="note">On the App Store soon.</p>
+    </div>
+    <div class="gallery" style="justify-content:center">
+      <figure><img src="img/board.jpg" alt="The Board on the iPhone"></figure>
+      <figure><img src="img/approvals.jpg" alt="Approvals on the iPhone"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="narrow">
+    <h2>Questions</h2>
+    <details><summary>Is there a version I can just sign up for?</summary><p>No, on purpose. luach holds a family’s plans, conversations and, if you connect it, email. It belongs on a computer the family controls. Nobody, including us, runs one for you.</p></details>
+    <details><summary>Does my family’s data go anywhere?</summary><p>Your calendar, conversations and memory stay on your server. What you ask goes to the AI model you configured: if it runs at home, nothing leaves the house; if it’s a cloud model, that provider sees the request. The app shows which, and asks first.</p></details>
+    <details><summary>Do I need Google?</summary><p>No. luach keeps its own calendar. If your family already lives in Google Calendar, it can use that instead, and Gmail import is optional.</p></details>
+    <details><summary>What does it cost?</summary><p>luach is free. You pay for your own computer or cloud server, a domain, and, if you use one, a cloud AI model, typically a few dollars a month for a family.</p></details>
+    <details><summary>Android?</summary><p>The web app works on any phone and can be added to the home screen. A native Android app isn’t planned yet.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="tag">luach · לוח: say it, and it’s on the family calendar.</span>
+    <a href="privacy/">Privacy</a>
+    <a href="https://github.com/luach-app/luach-app.github.io/issues">Support</a>
+    <a href="https://github.com/luach-app/luach-app.github.io/security/advisories/new">Report a vulnerability</a>
+    <span>Free software, GNU AGPL v3.0 or later</span>
+  </div>
+</footer>
 </body>
 </html>
